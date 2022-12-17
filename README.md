@@ -37,42 +37,6 @@ ${RespirationRateCalculation}
 * `data` contains 4 volunteers, and each volunteer contains 40 sequences
 * `respiration_rate_calculation.ipynb` used for calculate the respiration rate and visualize the location of the respiration.
 * `visualization_for_paperwriting.ipynb` visualize the final result in paper format.
-  
-### Data
-Please download the dataset in this **[Link](https://drive.google.com/file/d/1ix3B3JSplSp7fisazam-z7pNxlM7tyVL/view?usp=sharing)**. 
-
-You need to upzip the dataset and follow directory structure of the `data` as below.
-```
-${CoughingClassificationTask}
-|-- data
-|   |-- 001
-|   |   |-- 001-15.csv
-|   |   |-- 002-15.csv
-|   |   |-- 003-13.csv
-`
-`
-|   |-- 002
-|   |   |-- 001-22.csv
-|   |   |-- 002-15.csv
-|
-`
-`
-|   |-- 004
-`
-`
-|   |   |-- 009-22.csv
-|   |   |-- 010-20.csv
-```
-
-**Note:** The number before '.csv' is the ground truth of the sequence. For example, the ground truth of file ***001-15.csv*** is 15 breath/min. 
-
-If you have a problem with 'Download' problem when tried to download dataset from google drive link, please try this trick.  
-```  
-* Go the shared folder, which contains files you want to copy to your drive  
-* Select all the files you want to copy  
-* In the upper right corner click on three vertical dots and select “make a copy”  
-* Then, the file is copied to your personal google drive account. You can download it from your personal account.  
-```  
 
 ## Respiration Rate Calculation
 * Because the calculation is based on the FFT and Bandpass filter. We can directly perform the respiration calculation in the Jupyter Notebook. 
